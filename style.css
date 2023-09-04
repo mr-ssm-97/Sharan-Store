@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  height: 60px;
+  width: 100vw;
+  background-color: navy;
+  color: white;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  position: relative;
+}
+.nav-bar {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  height: inherit;
+  width: 60px;
+  cursor: pointer;
+  background-color: brown;
+  box-sizing: content-box;
+}
+.menu span {
+  font-size: 35px;
+  padding: 10px;
+}
+
+ul {
+  padding: 10px 30px;
+  height: 300px;
+  width: 300px;
+  list-style: none;
+  background-color: green;
+}
+ul li {
+  padding: 15px 0px;
+  font-size: 20px;
+}
+.logo {
+  position: absolute;
+  left: 80px;
+  top: 8px;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 40px;
+  width: 40px;
+}
+.logo p {
+  position: relative;
+  color: white;
+  left: 4px;
+  top: 12px;
+}
+.search-bar {
+  position: absolute;
+  box-sizing: border-box;
+  width: 712px;
+  height: 35px;
+  left: 265px;
+  top: 12px;
+  display: flex;
+}
+.selecting-catagory-search-bar {
+  width: 50px;
+  height: inherit;
+  border: none;
+}
+.selecting-catagory-search-bar select {
+  height: inherit;
+  width: inherit;
+  padding-left: 10px;
+  margin: 0px;
+  border: none;
+  background-color: rgb(212, 211, 211);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.selecting-catagory-search-bar select option {
+  background-color: white;
+}
+.search-bar-input-field {
+  width: 600px;
+  height: inherit;
+}
+.search-bar-input-field input {
+  height: inherit;
+  width: inherit;
+  padding-left: 5px;
+  margin: 0px;
+}
+.search-bar-submit {
+  height: inherit;
+  width: 35px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background-color: green;
+}
+.search-bar-submit button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.search-bar-submit span {
+  background-color: green;
+  color: white;
+  height: inherit;
+  width: inherit;
+  padding: 6px 0 0 6px;
+}
+.language-selected {
+  position: absolute;
+  left: 980px;
+}
+.language-selected select {
+  position: relative;
+  top: 17px;
+  color: white;
+  background-color: inherit;
+  border: none;
+}
+.language-selected select option {
+  color: black;
+}
+.language-selected img {
+  height: 50%;
+  width: 20px;
+  position: relative;
+  top: 23px;
+}
+.user-account {
+  position: absolute;
+  color: white;
+  left: 1110px;
+  top: 12px;
+}
+.orders {
+  position: absolute;
+  color: white;
+  left: 1250px;
+  top: 20px;
+}
+.cart {
+  color: white;
+}
+.cart img {
+  height: 100%;
+  width: 60px;
+}
+.hide {
+  display: none;
+}
