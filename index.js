@@ -38,6 +38,7 @@ sortHead.addEventListener("click", () => {
     sortExpandLess.classList.add("hidden");
   }
 });
+console.log("Js is working");
 let index = 1;
 let myInterval;
 let imgList = [
