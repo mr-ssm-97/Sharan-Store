@@ -17,7 +17,8 @@ let filterExpandLess = document.querySelector(".filter-by .less");
 filterHead.addEventListener("click", () => {
   if (filterOption.classList[1]) {
     filterOption.classList.remove("hidden");
-
+    filterExpandLess.classList.remove("hidden");
+    filterExpandMore.classList.add("hidden");
     filterHead.classList.add("b-bottom");
   } else {
     filterOption.classList.add("hidden");
