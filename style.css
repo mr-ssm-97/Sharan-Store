@@ -226,7 +226,6 @@ hr {
 }
 .sort-by {
   position: relative;
-  left: 40px;
   /* background-color: blue; */
   /* margin: 15px; */
   margin-top: 18px;
@@ -281,7 +280,6 @@ hr {
   position: relative;
   /* background-color: purple; */
   box-shadow: 0px 0px 3px 0.2px;
-  left: 40px;
   margin-top: 18px;
   width: 300px;
   /* height: 150px; */
@@ -351,6 +349,7 @@ hr {
   /* height: 200px; */
   /* width: 200px; */
   margin-top: 15px;
+  margin-left: 20px;
   padding: 5px;
 }
 .card-body {
