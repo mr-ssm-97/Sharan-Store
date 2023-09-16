@@ -42,102 +42,102 @@ let index = 1;
 let myInterval;
 let imgList = [
   {
-    path: "/images/list1.webp",
+    path: "images/list1.webp",
     price: 379,
     caption: "Adrika Refined Women Dress",
   },
   {
-    path: "/images/list2.webp",
+    path: "images/list2.webp",
     price: 307,
     caption: "Feminine Elegent Bracelet",
   },
   {
-    path: "/images/list3.webp",
+    path: "images/list3.webp",
     price: 192,
     caption: "Trendy Woment Fancy Dress",
   },
   {
-    path: "/images/list4.webp",
+    path: "images/list4.webp",
     price: 209,
     caption: "Fancy Woment Socks",
   },
   {
-    path: "/images/list5.webp",
+    path: "images/list5.webp",
     price: 349,
     caption: "Bluetooth Wireless Headphone",
   },
   {
-    path: "/images/list6.webp",
+    path: "images/list6.webp",
     price: 349,
     caption: "Styles Unique Men Belts",
   },
   {
-    path: "/images/list7.webp",
+    path: "images/list7.webp",
     price: 379,
     caption: "Trendy Party Wear Men Shirts",
   },
   {
-    path: "/images/list8.webp",
+    path: "images/list8.webp",
     price: 399,
     caption: "Attractive Women Casual Shoes",
   },
   {
-    path: "/images/list9.webp",
+    path: "images/list9.webp",
     price: 369,
     caption: "Relaxed Graceful Men Slipper",
   },
   {
-    path: "/images/list10.webp",
+    path: "images/list10.webp",
     price: 351,
     caption: "vivo y16 Cases & Covers",
   },
   {
-    path: "/images/list11.webp",
+    path: "images/list11.webp",
     price: 999,
     caption: "Comfy Modern Men T-shirts",
   },
   {
-    path: "/images/list12.webp",
+    path: "images/list12.webp",
     price: 699,
     caption: "Fancy Elegent Men Tshirts",
   },
   {
-    path: "/images/list13.webp",
+    path: "images/list13.webp",
     price: 399,
     caption: "Fashionate Men Tshirts",
   },
   {
-    path: "/images/list14.webp",
+    path: "images/list14.webp",
     price: 499,
     caption: "Adrika Fashionable Saree",
   },
   {
-    path: "/images/list15.webp",
+    path: "images/list15.webp",
     price: 599,
     caption: "Fashionable Latest Women Pant",
   },
   {
-    path: "/images/list16.webp",
+    path: "images/list16.webp",
     price: 1599,
     caption: "Alisha Superior Kurttis",
   },
   {
-    path: "/images/list17.webp",
+    path: "images/list17.webp",
     price: 319,
     caption: "Modern Stylus Girls Tshirts",
   },
   {
-    path: "/images/list18.webp",
+    path: "images/list18.webp",
     price: 319,
     caption: "Aadab Fashionable Men Slipper",
   },
   {
-    path: "/images/list19.webp",
+    path: "images/list19.webp",
     price: 329,
     caption: "Pretty Stylish Girls Frocks",
   },
   {
-    path: "/images/list20.webp",
+    path: "images/list20.webp",
     price: 119,
     caption: "Cables",
   },
@@ -158,7 +158,7 @@ imgList.forEach((item) => {
 });
 slider.appendChild(
   Object.assign(document.createElement("img"), {
-    src: "/images/slider/flipSlider1.webp",
+    src: "images/slider/flipSlider1.webp",
   })
 );
 console.log(menuList);
@@ -173,7 +173,7 @@ let slideLeft = () => {
   slider.removeChild(slider.lastElementChild);
   slider.appendChild(
     Object.assign(document.createElement("img"), {
-      src: `/images/slider/flipSlider${index}.webp`,
+      src: `images/slider/flipSlider${index}.webp`,
     })
   );
 };
@@ -182,7 +182,7 @@ let slideRight = () => {
   slider.removeChild(slider.lastElementChild);
   slider.appendChild(
     Object.assign(document.createElement("img"), {
-      src: `/images/slider/flipSlider${index}.webp`,
+      src: `images/slider/flipSlider${index}.webp`,
     })
   );
 };
