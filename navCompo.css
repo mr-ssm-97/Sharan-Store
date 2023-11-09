@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+}
+h1 {
+  background-color: green !important;
+  color: white;
+  text-align: center;
+  height: 50px;
+  padding-top: 15px;
+}

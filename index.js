@@ -1,4 +1,5 @@
-let menuList = document.querySelector("ul");
+let menuList = document.querySelector(".nav-bar ul");
+let navBar = document.querySelector(".nav-bar");
 let header = document.querySelector("header");
 let footer = document.querySelector("footer");
 let menuBar = document.querySelector(".menu");
@@ -8,36 +9,19 @@ let right = document.querySelector(".right span");
 let listItems = document.querySelector(".product-list");
 let sortOption = document.querySelector(".sort-by .option-list");
 let filterOption = document.querySelector(".filter-by .option-box");
-let sortHead = document.querySelector(".all-inner");
+// let sortHead = document.querySelector(".all-inner");
+let sortHead = document.querySelector(".sort-by .all-inner");
 let filterHead = document.querySelector(".category");
 let sortExpandLess = document.querySelector(".sort-by .less");
 let sortExpandMore = document.querySelector(".sort-by .more");
 let filterExpandMore = document.querySelector(".filter-by .more");
 let filterExpandLess = document.querySelector(".filter-by .less");
-filterHead.addEventListener("click", () => {
-  if (filterOption.classList[1]) {
-    filterOption.classList.remove("hidden");
-    filterExpandLess.classList.remove("hidden");
-    filterExpandMore.classList.add("hidden");
-    filterHead.classList.add("b-bottom");
-  } else {
-    filterOption.classList.add("hidden");
-    filterExpandMore.classList.remove("hidden");
-    filterExpandLess.classList.add("hidden");
-    filterHead.classList.remove("b-bottom");
-  }
-});
-sortHead.addEventListener("click", () => {
-  if (sortOption.classList[1]) {
-    sortOption.classList.remove("hidden");
-    sortExpandLess.classList.remove("hidden");
-    sortExpandMore.classList.add("hidden");
-  } else {
-    sortOption.classList.add("hidden");
-    sortExpandMore.classList.remove("hidden");
-    sortExpandLess.classList.add("hidden");
-  }
-});
+let navProfile = document.querySelector(".nav-bar .profile");
+let navSetting = document.querySelector(".nav-bar .setting");
+let navContactUs = document.querySelector(".nav-bar .contact-us");
+let navAboutUs = document.querySelector(".nav-bar .about-us");
+let navHelp = document.querySelector(".nav-bar .help");
+
 console.log("Js is working");
 let index = 1;
 let myInterval;
@@ -166,9 +150,16 @@ console.log(menuList);
 function toggleMenuBar() {
   console.log("Clicked on Menu bar");
   menuList.classList[0]
-    ? menuList.classList.remove("hide")
-    : menuList.classList.add("hide");
+    ? menuList.classList.remove("hidden")
+    : menuList.classList.add("hidden");
 }
+function openMenuBar() {
+  if (menuList.classList[0]) menuList.classList.remove("hidden");
+}
+function closeMenuBar() {
+  if (!menuList.classList[0]) menuList.classList.add("hidden");
+}
+
 let slideLeft = () => {
   index == 1 ? (index = 10) : index--;
   slider.removeChild(slider.lastElementChild);
@@ -192,6 +183,13 @@ let createInterval = () => {
 };
 createInterval();
 menuBar.onclick = () => toggleMenuBar();
+// navBar.onmouseover = () => openMenuBar();
+// navBar.onmouseout = () => closeMenuBar();
+menuBar.onmouseover = () => openMenuBar();
+navBar.onmouseleave = () => closeMenuBar();
+menuList.onmouseover = () => openMenuBar();
+menuList.onmouseout = () => closeMenuBar();
+
 console.log(right);
 console.log(slider.lastElementChild);
 left.onclick = () => {
@@ -204,3 +202,28 @@ right.onclick = () => {
   slideRight();
   createInterval();
 };
+filterHead.addEventListener("click", () => {
+  if (filterOption.classList[1]) {
+    filterOption.classList.remove("hidden");
+    filterExpandLess.classList.remove("hidden");
+    filterExpandMore.classList.add("hidden");
+    filterHead.classList.add("b-bottom");
+  } else {
+    filterOption.classList.add("hidden");
+    filterExpandMore.classList.remove("hidden");
+    filterExpandLess.classList.add("hidden");
+    filterHead.classList.remove("b-bottom");
+  }
+});
+sortHead.addEventListener("click", () => {
+  if (sortOption.classList[1]) {
+    sortOption.classList.remove("hidden");
+    sortExpandLess.classList.remove("hidden");
+    sortExpandMore.classList.add("hidden");
+  } else {
+    sortOption.classList.add("hidden");
+    sortExpandMore.classList.remove("hidden");
+    sortExpandLess.classList.add("hidden");
+  }
+});
+// navProfile.onclick=()=>
